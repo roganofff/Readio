@@ -1,6 +1,7 @@
 package quo.vadis.readio.presentation.ui
 
 import android.net.Uri
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -16,8 +17,10 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.navigation.NavController
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.google.firebase.auth.FirebaseAuth
 import quo.vadis.readio.presentation.navigation.Screen
 
 data class BottomNavItem(
@@ -32,7 +35,8 @@ fun AppNavHost(
     navController: NavController = rememberNavController(),
     startDestination: String = Screen.Auth.route,
     modifier: Modifier = Modifier,
-    snackBarHostState: SnackbarHostState = remember { SnackbarHostState() }
+    snackBarHostState: SnackbarHostState = remember { SnackbarHostState() },
+    firebaseAuth: FirebaseAuth
 ) {
     val bottomTabs = listOf(
         BottomNavItem(route = "books", icon = Icons.AutoMirrored.Filled.MenuBook, label = "Книги"),

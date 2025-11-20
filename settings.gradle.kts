@@ -1,5 +1,6 @@
 pluginManagement {
     repositories {
+        gradlePluginPortal()
         google {
             content {
                 includeGroupByRegex("com\\.android.*")
@@ -8,7 +9,12 @@ pluginManagement {
             }
         }
         mavenCentral()
-        gradlePluginPortal()
+    }
+    plugins {
+        id("org.jetbrains.kotlin.android") version "1.9.20"
+        id("org.jetbrains.kotlin.plugin.compose") version "1.5.4"
+        id("com.android.application") version "8.11.2" apply false
+        id("com.android.library") version "8.11.2" apply false
     }
 }
 dependencyResolutionManagement {
