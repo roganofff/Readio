@@ -5,7 +5,7 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 
 @Composable
-private fun PlaceholderAuthScreen(onAuthSuccess: () -> Unit) {
+fun PlaceholderAuthScreen(onAuthSuccess: () -> Unit) {
     Column {
         Text("AUTH (placeholder)")
         Button(onClick = onAuthSuccess) {

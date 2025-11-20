@@ -21,6 +21,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.google.firebase.auth.FirebaseAuth
+import quo.vadis.auth.ui.PlaceholderAuthScreen
 import quo.vadis.readio.presentation.navigation.Screen
 
 data class BottomNavItem(
