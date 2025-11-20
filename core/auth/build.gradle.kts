@@ -34,6 +34,9 @@ android {
 
 dependencies {
 
+    implementation(libs.firebase.auth.ktx)
+    implementation(libs.androidx.datastore.preferences)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

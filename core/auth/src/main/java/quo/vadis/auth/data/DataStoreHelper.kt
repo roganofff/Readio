@@ -1,4 +1,4 @@
-package quo.vadis.auth
+package quo.vadis.auth.data
 
 import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey
