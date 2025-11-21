@@ -28,3 +28,5 @@ rootProject.name = "Readio"
 include(":app")
 include(":feature:auth")
 include(":core:auth")
+include(":core:navigation")
+include(":feature:books")
