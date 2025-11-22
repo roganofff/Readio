@@ -122,11 +122,13 @@ fun AppNavHost(
             startDestination = startDestination,
             modifier = Modifier.padding(innerPadding)
         ) {
-            authGraph {
-                navController.navigate(Route.Main.route) {
-                    popUpTo(Route.Auth.route) { inclusive = true }
+            authGraph(
+                onNavigateToMain = {
+                    navController.navigate(Route.Main.route) {
+                        popUpTo(Route.Auth.route) { inclusive = true }
+                    }
                 }
-            }
+            )
 
             navigation(startDestination = Route.BookList.route, route = Route.Main.route) {
                 booksGraph { bookId, title ->

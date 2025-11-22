@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import quo.vadis.auth.data.AuthRepository
+import quo.vadis.auth.data.FirebaseAuthRepository
 import quo.vadis.auth.mvi.AuthEffect
 import quo.vadis.auth.mvi.AuthIntent
 import quo.vadis.auth.mvi.AuthState
@@ -20,7 +20,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val repo: AuthRepository
+    private val repo: FirebaseAuthRepository
 ) : ViewModel() {
 
     private val _state = MutableStateFlow(AuthState())

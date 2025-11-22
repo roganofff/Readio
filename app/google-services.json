@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "650640209234",
+    "project_id": "readio-avito",
+    "storage_bucket": "readio-avito.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650640209234:android:03fd82f386ada28035f68b",
+        "android_client_info": {
+          "package_name": "quo.vadis.readio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650640209234-ku20vmn2po619hhi1l1ed2l4h0elomf2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "quo.vadis.readio",
+            "certificate_hash": "c19006d9f2616acf3be09940157c1fb4f3e7a0e3"
+          }
+        },
+        {
+          "client_id": "650640209234-7nik984gs475k5mqbqbem8of55s3c8pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLK8yCRrm8r4Vs2q_mn21d9a-3YxpCmaA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650640209234-7nik984gs475k5mqbqbem8of55s3c8pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
